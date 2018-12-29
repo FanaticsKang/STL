@@ -11,7 +11,7 @@ set( CMAKE_CXX_FLAGS "-std=c++14 -O0" )
 
 #option(GFLAGS "Enable Google Flags." ON)
 #add_definitions(-DCERES_GFLAGS_NAMESPACE=${GFLAGS_NAMESPACE})
-#find_package(gflags REQUIRED)
+find_package(gflags REQUIRED)
 
 add_executable(Test_GFLAGS test_gflags.cpp)
 target_link_libraries(Test_GFLAGS gflags)
