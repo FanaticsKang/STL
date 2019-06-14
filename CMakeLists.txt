@@ -18,3 +18,10 @@ add_subdirectory(GFLAG)
 add_subdirectory(Brace_Functional)
 #add_subdirectory(Protobuf)
 add_subdirectory(Class)
+add_subdirectory(Map_Pair)
+add_subdirectory(Set)
+add_subdirectory(Memory_leak)
+add_subdirectory(Folder)
+add_subdirectory(FileSystem)
+
+

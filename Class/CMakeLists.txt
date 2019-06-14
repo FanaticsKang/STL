@@ -24,3 +24,5 @@ add_executable(Test_TEMPLATE test_template.cc)
 target_link_libraries(Test_TEMPLATE STRUCTLIB)
 
 add_executable(Test_Polymorphically test_polymorphically.cc)
+
+add_executable(Test_Construct test_construct.cc)

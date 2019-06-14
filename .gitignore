@@ -1,7 +1,8 @@
 # ignore build and bin
 build/
 bin/
-
+.vscode/
 #ignore KDevelop
 .kdev4
 *.kdev4
+STL.code-workspace
