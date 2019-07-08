@@ -14,7 +14,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory(Pointer)
 add_subdirectory(Vector)
-add_subdirectory(GFLAG)
+# add_subdirectory(GFLAG)
 add_subdirectory(Brace_Functional)
 #add_subdirectory(Protobuf)
 add_subdirectory(Class)

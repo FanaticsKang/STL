@@ -13,3 +13,5 @@ add_executable(Test_Array array.cpp)
 add_executable(Array_Init Array_Init.cpp)
 
 add_executable(Vector_Iter Vector.cpp)
+
+add_executable(List_Test List.cc)
