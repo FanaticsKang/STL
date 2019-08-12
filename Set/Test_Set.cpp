@@ -1,11 +1,14 @@
 #include <algorithm>
 #include <iostream>
 #include <set>
-
+#include <assert.h>
 using namespace std;
 
 int main() {
+  // 设置为Release模式, assert不会生效.
+  assert(false);
   std::set<int> hello_set;
+  hello_set.erase(5);
   for (int i = 0; i < 10; ++i) {
     hello_set.emplace(i);
   }
