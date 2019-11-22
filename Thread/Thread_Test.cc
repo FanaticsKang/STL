@@ -1,23 +1,36 @@
+#include <unistd.h>
 #include <iostream>
 #include <thread>
-#include <unistd.h>
 
 void Run(int* num) {
-  for(int i = 0; i < 100; ++i){
+  for (int i = 0; i < 100; ++i) {
     std::cout << "num: " << *num << std::endl;
-    sleep(1);    
+    sleep(1);
   }
 }
 
-int main() {
-  int printNum = 0;
-  std::thread st(Run, &printNum);
-  sleep(1);
-  for(int j = 0; j < 10; ++j){
-    ++printNum;
-    // std::cout << "printNum: " << printNum << std::endl;
-    sleep(5);
+class MyThread {
+ public:
+  void Run() {
+    int printNum = 0;
+    // this = &thread0
+    std::thread th(&MyThread::Print, this, &printNum);
+    for (int j = 0; j < 10; ++j) {
+      ++printNum;
+      // std::cout << "printNum: " << printNum << std::endl;
+      sleep(5);
+    }
+    th.join();
+  };
+  void Print(int* num) {
+    for (int i = 0; i < 100; ++i) {
+      std::cout << "num: " << *num << std::endl;
+      sleep(2);
+    }
   }
-  st.join();
+};
 
+int main() {
+  MyThread thread0;
+  thread0.Run();
 }

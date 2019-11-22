@@ -24,5 +24,6 @@ add_subdirectory(Memory_leak)
 add_subdirectory(Folder)
 add_subdirectory(FileSystem)
 add_subdirectory(Thread)
+add_subdirectory(Right_Value)
 
 
