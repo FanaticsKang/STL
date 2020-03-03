@@ -25,5 +25,7 @@ add_subdirectory(Folder)
 add_subdirectory(FileSystem)
 add_subdirectory(Thread)
 add_subdirectory(Right_Value)
+add_subdirectory(Inherit)
+add_subdirectory(Struct)
 
 

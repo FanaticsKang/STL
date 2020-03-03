@@ -18,3 +18,5 @@ add_executable(List_Test List.cc)
 add_executable(For_Each_Test for_each_test.cc)
 
 add_executable(RemoveErase remove_erase.cc)
+
+add_executable(Cholesky cholesky.cc)
