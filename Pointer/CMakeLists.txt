@@ -11,3 +11,4 @@ set( CMAKE_CXX_FLAGS "-std=c++14 -O0 -g" )
 
 add_executable(Test_Ptr Test_Unique_ptr.cpp)
 add_executable(Test_Ptr_2 Test_Ptr.cc)
+add_executable(weak_ptr weak_ptr.cc)

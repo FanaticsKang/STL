@@ -12,3 +12,5 @@ MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
 set( CMAKE_CXX_FLAGS "-std=c++14 -O0" )
 
 add_executable(${PROJECT_NAME} right_value.cc)
+
+add_executable(polymophism polymophism.cc)

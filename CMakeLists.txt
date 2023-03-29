@@ -29,5 +29,6 @@ add_subdirectory(Inherit)
 add_subdirectory(Struct)
 add_subdirectory(Boost)
 add_subdirectory(Eigen)
+add_subdirectory(Tuple)
 
 

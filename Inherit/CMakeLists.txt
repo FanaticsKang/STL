@@ -10,3 +10,4 @@ project(Inherit)
 set( CMAKE_CXX_FLAGS "-std=c++14 -O0 -g" )
 
 add_executable(Pointer pointer.cc)
+add_executable(virtual virtual_func.cc)
